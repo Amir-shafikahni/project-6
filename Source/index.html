@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/24d29ab742.js" crossorigin="anonymous"></script>
+    <title>Wheather-project</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="mainBox col-10 col-md-8 col-lg-6">
+                <div class="searchBox text-center my-4">
+                    <input class="searchInput form form-control" type="text" placeholder="Search...">
+                    <button class="searchButton btn btn-dark"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="infoBox ms-2 mb-4">
+                    <h1 class="fs-1">Weather in <span class="cityName"></span></h1>
+                    <h1 class="mt-4 ms-2"><span class="tempreture"></span>°c</h1>
+                    <h4 class="mt-5 ms-3 mb-3"><i class="weatherIcon me-2 fas"></i><span class="weatherType"></span></h4>
+                    <h5 class="ms-3">Humidity: <span class="humidity"></span></h5>
+                    <h5 class="ms-3">windSpeed: <span class="windSpeed"></span></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="invalidCityNameEror">Please enter a valid city name</div>
+
+    <script src="../Bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script> 
+</body>
+</html>

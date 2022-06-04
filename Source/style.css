@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    height: 1100px;
+    width: 100%;
+}
+
+.mainBox {
+    background-color: rgba(0, 0, 0, 40%);
+    border-radius: 10px;
+    margin: 220px auto;
+}
+
+.searchBox {
+    display: flex;
+    justify-content: center;
+}
+
+.searchBox input{
+    background-color: rgba(0, 0, 0, 30%);
+    color: rgba(255, 255, 255, 80%);
+    border-radius: 20px;
+    border: none;
+    width: 89%;
+    transition: 0.3s;
+}
+
+
+.searchBox input:hover{
+    background-color: rgba(255,255, 255, 20%);
+}
+
+.searchBox input:focus {
+    background-color: rgba(0, 0, 0, 30%);
+    border: 1px solid rgba(255, 255, 255, 50%);
+    box-shadow: none;
+    color: rgba(255, 255, 255, 80%);
+}
+
+.searchBox input::placeholder {
+    color: rgba(255, 255, 255, 80%);
+}
+
+.searchBox button {
+    background-color: rgba(0, 0, 0, 30%);
+    color: rgba(255, 255, 255, 80%);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-left: 5px;
+}
+
+.searchBox button:hover{
+    background-color: rgba(255,255, 255, 20%);
+}
+
+.infoBox {
+    display: none;
+}
+
+.infoBox h1,h4,h5 {
+    color: rgba(255, 255, 255, 75%);
+    font-weight: 200;
+}
+
+.invalidCityNameEror{
+    background-color: rgba(0, 0, 0, 40%);
+    color: rgba(255, 255, 255, 80%);
+    border-radius:10px;
+    position: absolute;
+    overflow: hidden;
+    top: 50px;
+    left: 40px;
+    padding: 8px 10px;
+    display: none;
+}
+
+.invalidCityNameEror::before {
+    content: "";
+    background-color: rgba(255, 255, 255, 70%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    border-radius: 10px;
+    animation: 5s timeLine linear 1;
+}
+
+@keyframes timeLine {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
