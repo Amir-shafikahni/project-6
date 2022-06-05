@@ -34,7 +34,7 @@ let citiesData = [
     tempreture: "30",
     weatherType: "sunny",
     humidity: "1%",
-    windSpeed: "1 km/h",
+    windSpeed: "2 km/h",
   },
   {
     name: "shiraz",
